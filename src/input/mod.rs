@@ -2982,7 +2982,7 @@ impl State {
                     }
                 }
 
-                if !is_overview_open {
+                if !is_overview_open && !self.niri.config.borrow().input.focus_ignores_click {
                     self.niri.layout.activate_window(&window);
                 }
 
