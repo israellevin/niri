@@ -735,6 +735,7 @@ mod tests {
 
                 warp-mouse-to-focus
                 focus-follows-mouse
+                focus-ignores-click
                 workspace-auto-back-and-forth
 
                 mod-key "Mod5"
@@ -1138,6 +1139,7 @@ mod tests {
                         max_scroll_amount: None,
                     },
                 ),
+                focus_ignores_click: false,
                 workspace_auto_back_and_forth: true,
                 mod_key: Some(
                     IsoLevel3Shift,
