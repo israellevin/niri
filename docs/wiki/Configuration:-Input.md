@@ -103,6 +103,7 @@ input {
     // disable-power-key-handling
     // warp-mouse-to-focus
     // focus-follows-mouse max-scroll-amount="0%"
+    // focus-ignores-click
     // workspace-auto-back-and-forth
 
     // mod-key "Super"
@@ -353,6 +354,16 @@ input {
 input {
     // Allow focus-follows-mouse only when it will not scroll the view.
     focus-follows-mouse max-scroll-amount="0%"
+}
+```
+
+#### `focus-ignores-click`
+
+Normally, clicking on a window will focus it. If this flag is enabled, clicks will not focus windows.
+
+```kdl
+input {
+    focus-ignores-click
 }
 ```
 
